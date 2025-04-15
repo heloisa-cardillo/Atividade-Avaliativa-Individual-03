@@ -1,196 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heloisa Cardillo Site</title>
+    <title>Heloisa Cardillo Portfólio</title>
     <style>
         body {
             background: linear-gradient(to top, #c93384, #e44f9c, #eb9ac0, #f3aacb, #f7bfd8, #fbd5e5, #fdeaf2, #ffffff);
             margin: 20px;
             font-family: Arial, sans-serif;
+            color: #000;
         }
 
         h1 {
             text-align: center;
-            color: #000;
             margin-top: 40px;
             font-size: 36px;
-            font-family: 'Arial', sans-serif;
         }
 
         h2 {
-            margin-left: 24px;
+            margin: 20px 0 20px 24px;
             font-size: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        }
 
+        h3, h4 {
+            margin: 16px 0 16px 4px;
         }
 
         h3 {
-            color: #000;
-            margin-left: 4px;
             font-size: 16px;
-            margin-top: 16px;
-            margin-bottom: 16px;
         }
 
         h4 {
-            text-align: left;
-            color: #000;
-            margin-left: 4px;
             font-size: 14px;
-            margin-top: 14px;
-            margin-bottom: 14px;
         }
 
-        .contatoUm {
-            text-align: right;
-            font-family: 'Arial', sans-serif;
-            color: #000;
-            margin-top: 24px;
-            margin-bottom: 20px;
-            font-family: 'Arial', sans-serif;
+        .contato {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
             gap: 20px;
-            margin-right: 40px;
+            margin: 24px 40px 20px 40px;
+        }
 
+        .contato.contatoUm {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .contato.contatoDois {
+            justify-content: flex-start;
+            text-align: left;
+            color: #fff;
+        }
+
+        .contato img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .secao {
+            margin-top: 12px;
+            margin-bottom: 20px;
+            text-align: left;
         }
 
         .apresentacao {
-            color: #000;
+            margin: 24px 0;
             text-align: left;
-            margin-top: 24px;
-            margin-bottom: 24 px;
-            font-family: 'Arial', sans-serif;
         }
 
-        .formacaoAcademica {
-            color: #000;
+        .Extensao {
+            margin: 12px 0 20px;
             text-align: left;
-            margin-top: 12px;
-            margin-bottom: 20px;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .projetos {
-            color: #000;
-            text-align: left;
-            margin-top: 12px;
-            margin-bottom: 20px;
-            font-family: 'Arial', sans-serif;
-        }
-
-
-        .trabalhosAcademicos {
-            color: #000;
-            text-align: left;
-            margin-top: 12px;
-            margin-bottom: 20px;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .certificados {
-            color: #000;
-            text-align: left;
-            margin-top: 12px;
-            margin-bottom: 20px;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .contatoDois {
-            text-align: left;
-            margin-top: 24px;
-            margin-bottom: 20px;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content:flex-start;
-            align-items: center;
-            gap: 20px;
-            margin-right: 40px;
-        }
-
-        .contatoUm img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-        }
-
-        .contatoDois img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
         }
     </style>
 </head>
-
 <body>
     <h1>Heloisa Cardillo</h1>
 
-    <div class="contatoUm">
+    <div class="contato contatoUm">
         <h2>Contato</h2>
-        <h3><a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
-                <img src="image/linkedin_icon.png" alt="Likedin"> </a></h3>
-        <h3><a href="https://github.com/heloisa-cardillo" target="_blank">
-                <img src="image/github_icon.png" alt="Github"> </a></h3>
+        <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
+            <img src="image/linkedin_icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/heloisa-cardillo" target="_blank">
+            <img src="image/github_icon.png" alt="GitHub">
+        </a>
     </div>
 
     <div class="apresentacao">
-        <h3> 🎓 Estudando <strong>Desenvolvimento de Software Multiplataformas</strong> na <strong>FATEC</strong> em São
-            José dos Campos </h3>
-        <h3> 📚 Primeira graduação em <strong>Ciências Sociais</strong> pela <strong>UNESP Araraquara</strong> </h3>
-        <h3> 🐇 Fun fact: tutora de <strong>7 coelhinhos fofos</strong>! </h3>
+        <h3>🎓 Estudando <strong>Desenvolvimento de Software Multiplataformas</strong> na <strong>FATEC</strong> em São José dos Campos</h3>
+        <h3>📚 Primeira graduação em <strong>Ciências Sociais</strong> pela <strong>UNESP Araraquara</strong></h3>
+        <h3>🐇 Fun fact: tutora de <strong>7 coelhinhos fofos</strong>!</h3>
     </div>
 
-    <div class="formacaoAcademica">
-        <h2> <strong> Formação Academica: </strong> </h2>
+    <div class="secao">
+        <h2><strong>Formação Acadêmica:</strong></h2>
         <h3><strong>Pós Graduação</strong></h3>
-        <h4>Tecnologia da Informação e Ciencia de Dados - Pós Graduação - Faculdade Libano - 2025 </h4>
+        <h4>Tecnologia da Informação e Ciência de Dados - Faculdade Libano - 2025</h4>
         <h3><strong>Graduação</strong></h3>
-        <h4>Desenvolvimento de Software Multiplataformas - Fatec São José dos Campos - Prof. Jessen Vidal 2025- 2027</h4> 
-        <h4>Ciencias Sociais - UNESP - Universidade Estadual Paulista Júlio de Mesquita Filho 2018 -2022</h4>
+        <h4>Desenvolvimento de Software Multiplataformas - Fatec São José dos Campos - 2025–2027</h4>
+        <h4>Ciências Sociais - UNESP - 2018–2022</h4>
         <h3><strong>Curso</strong></h3>
-        <h4>Curso de Agente de Projetos Sociais - Instituto Federal Farroupilha 2020 </h4>
+        <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
     </div>
 
-    <div class="Extensão">
-        <h2><strong> Enactus</strong></h2>
-        <h3> Organização internacional sem fins lucrativos que incentiva estudantes universitários a criar soluções empreendedoras para problemas sociais e ambientais.  </h3>
-        <h3> Presidente Enactus Unesp Araraquara 2019 a 2020</h3>
-        <h4>Presidente ENACTUS UNESP - 2019 a 2020 
-            *Desenvolvimento de projetos sociais<br>
+    <div class="Extensao">
+        <h2><strong>Enactus</strong></h2>
+        <h3>Organização internacional que incentiva estudantes a criar soluções empreendedoras para problemas sociais e ambientais.</h3>
+        <h3>Presidente Enactus UNESP Araraquara - 2019 a 2020</h3>
+        <h4>
+            * Desenvolvimento de projetos sociais<br>
             * Resolução de conflitos<br>
             * Gestão de pessoas<br>
             * Comunicação interna<br>
             * Cultura organizacional<br>
-            * Recrutamento e seleção<br>
+            * Recrutamento e seleção
         </h4>
         <h3>Membro do Projeto Luz do Valle</h3>
-        <h4>O projeto Luz do Valle, o qual trabalha na produção e venda de velas ecológicas com objetivo de reverter renda para mulheres em situação de vulnerabilidade social.</h4>
+        <h4>Produção e venda de velas ecológicas para gerar renda a mulheres em situação de vulnerabilidade social.</h4>
     </div>
 
-    <div class="trabalhosAcademicos">
-        <h2> <strong> Trabalhos Academicos </strong> </h2>
-        <h3> TCC - Trabalho de Conclusão de Curso </h3>
-        <h4>O fenomeno do Feminicidio no Brasil: Estudo de caso sobre o Municipio do Rio de Janeiro no periodo de 2000 a 2010 </h4>
+    <div class="secao">
+        <h2><strong>Trabalhos Acadêmicos</strong></h2>
+        <h3>TCC - Trabalho de Conclusão de Curso</h3>
+        <h4>O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o município do Rio de Janeiro no período de 2000 a 2010</h4>
     </div>
 
-    <div class="certificados">
-        <h2> <strong> Certificados </strong></h2>
-        <h3> Hackathon Enactus </h3>
-        <h4>Líder de um projeto semifinalista entre 120 equipes no Hackathon da ENACTUS Brasil - 2020<br>
-            O projeto foi criado do zero, durante a pandemia, e tem como objetivo vender alimentos orgânicos de
-            produtores rurais de um assentamento em Araraquara.<br>
-            Projeto está em funcionamento até hoje.</h4>
+    <div class="secao">
+        <h2><strong>Certificados</strong></h2>
+        <h3>Hackathon Enactus</h3>
+        <h4>
+            Líder de um projeto semifinalista entre 120 equipes no Hackathon da ENACTUS Brasil - 2020<br>
+            Criado do zero durante a pandemia para comercializar alimentos orgânicos de produtores rurais de um assentamento em Araraquara.<br>
+            Projeto ativo até hoje.
+        </h4>
     </div>
 
-    
-    <div class="formacaoAcademica">
-        <h2> <strong> Cursos: </strong> </h2>
+    <div class="secao">
+        <h2><strong>Cursos</strong></h2>
         <h3>Fundamentos de Orientação a Objetos com Kotlin - DIO</h3>
         <h3>Princípios de Interface de Usuário e Layouts Android - DIO</h3>
         <h3>Introdução ao Desenvolvimento Moderno de Software - DIO</h3>
@@ -201,14 +150,7 @@
         <h3>Mercado de Desenvolvimento Mobile - DIO</h3>
     </div>
 
-    <div class="contatoDois">
+    <div class="contato contatoDois">
         <h2>Contato</h2>
-        <h3><a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
-            <img src="image/linkedin_icon.png" alt="Likedin"> </a></h3>
-    <h3>
-        <a href="https://github.com/heloisa-cardillo" target="_blank">
-            <img src="image/github_icon.png" alt="Github"> </a></h3>
-    </div>
-</body>
-
-</html>
+        <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
+            <img src="image/link
