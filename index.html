@@ -7,19 +7,27 @@
   <title>Heloisa Cardillo Portifolio</title>
   <meta name="description" content="portifolio design digital FATEC">
   <link rel="icon" href="image/ideia.gif" type="image/gif">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <style>
     body {
       background: linear-gradient(to top, #c93384, #e44f9c, #eb9ac0, #f3aacb, #f7bfd8, #fbd5e5, #fdeaf2, #ffffff);
       margin: 0;
       font-family: Arial, sans-serif;
+      min-height: 100vh;
     }
 
     .container {
-      display: grid;
-      grid-template-columns: 1fr;
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 28px;
+    }
+
+    .content-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
 
     h1 {
@@ -55,30 +63,24 @@
       margin-top: 8px;
       margin-bottom: 40px;
       font-style: italic;
+      grid-column: 1 / -1;
     }
 
     .contatoUm {
-      text-align: right;
-      color: #000;
-      margin-top: 24px;
-      margin-bottom: 20px;
       display: flex;
       justify-content: flex-end;
       gap: 20px;
-      margin-right: 40px;
+      margin: 24px 40px 20px 0;
       align-items: center;
     }
 
     .contatoDois {
-      text-align: left;
-      margin-top: 24px;
-      margin-bottom: 20px;
-      color: #ffffff;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 20px;
-      margin-right: 40px;
+      margin: 24px 40px 20px 0;
+      color: #ffffff;
     }
 
     .contatoUm img,
@@ -102,11 +104,23 @@
     .standard {
       color: #000;
       text-align: left;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 100%;
     }
 
     footer {
       margin-top: 40px;
       padding-bottom: 30px;
+    }
+
+    /* Bootstrap-style responsive breakpoints */
+    @media (max-width: 768px) {
+      .content-container {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -134,70 +148,78 @@
       <h3> 🐇 Fun fact: tutora de <strong>7 coelhinhos fofos</strong>! </h3>
     </div>
 
-    <div class="standard">
-      <h2> <strong> Formação Acadêmica: </strong> </h2>
-      <h3><strong>Pós-graduação</strong></h3>
-      <h4>Tecnologia da Informação e Ciência de Dados - Faculdade Líbano - 2025 </h4>
-      <h3><strong>Graduação</strong></h3>
-      <h4>Desenvolvimento de Software Multiplataformas - FATEC São José dos Campos - 2025–2027</h4>
-      <h4>Ciências Sociais - UNESP - 2018–2022</h4>
-      <h3><strong>Curso</strong></h3>
-      <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
-    </div>
+    <div class="content-container">
+      <!-- Coluna Esquerda -->
+      <div class="column">
+        <div class="standard">
+          <h2> <strong> Formação Acadêmica: </strong> </h2>
+          <h3><strong>Pós-graduação</strong></h3>
+          <h4>Tecnologia da Informação e Ciência de Dados - Faculdade Líbano - 2025 </h4>
+          <h3><strong>Graduação</strong></h3>
+          <h4>Desenvolvimento de Software Multiplataformas - FATEC São José dos Campos - 2025–2027</h4>
+          <h4>Ciências Sociais - UNESP - 2018–2022</h4>
+          <h3><strong>Curso</strong></h3>
+          <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
+        </div>
 
-    <div class="standard">
-      <h2><strong> Projetos </strong></h2>
-      
-      <h3><strong>Enactus</strong></h3>
-      <h4>Organização internacional sem fins lucrativos que incentiva estudantes a criar soluções empreendedoras para problemas sociais e ambientais.</h4>
-      <h4><strong>Presidente Enactus UNESP Araraquara – 2019 a 2020</strong></h4>
-      <h4>
-        * Desenvolvimento de projetos sociais<br>
-        * Resolução de conflitos<br>
-        * Gestão de pessoas<br>
-        * Comunicação interna<br>
-        * Cultura organizacional<br>
-        * Recrutamento e seleção<br>
-      </h4>
-      <h4><strong>Membro do Projeto Luz do Valle</strong></h4>
-      <h4>Produção e venda de velas ecológicas com renda revertida para mulheres em situação de vulnerabilidade social.</h4>
-      
-      <h3><strong>API</strong></h3>
-      <h4>Projeto de desenvolvimento de aplicativo para gestão de tarefas com foco em produtividade.</h4>
-      <h4><strong>Desenvolvedor Full Stack – 2024</strong></h4>
-      <h4>
-        * Implementação de frontend responsivo<br>
-        * Desenvolvimento de API RESTful<br>
-        * Integração com banco de dados<br>
-        * Testes automatizados<br>
-        * Documentação técnica<br>
-      </h4>
-    </div>
+        <div class="standard">
+          <h2> <strong> Trabalhos Acadêmicos </strong> </h2>
+          <h3>TCC – Trabalho de Conclusão de Curso</h3>
+          <h4>O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de Janeiro no período de 2000 a 2010</h4>
+        </div>
 
-    <div class="standard">
-      <h2> <strong> Trabalhos Acadêmicos </strong> </h2>
-      <h3>TCC – Trabalho de Conclusão de Curso</h3>
-      <h4>O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de Janeiro no período de 2000 a 2010</h4>
-    </div>
+        <div class="standard">
+          <h2> <strong> Certificados </strong></h2>
+          <h3>Hackathon Enactus</h3>
+          <h4>Líder de projeto semifinalista entre 120 equipes – ENACTUS Brasil 2020<br>
+            Projeto criado na pandemia com foco em venda de alimentos orgânicos por produtores rurais de assentamento em Araraquara. Está em funcionamento até hoje.
+          </h4>
+        </div>
+      </div>
 
-    <div class="standard">
-      <h2> <strong> Certificados </strong></h2>
-      <h3>Hackathon Enactus</h3>
-      <h4>Líder de projeto semifinalista entre 120 equipes – ENACTUS Brasil 2020<br>
-        Projeto criado na pandemia com foco em venda de alimentos orgânicos por produtores rurais de assentamento em Araraquara. Está em funcionamento até hoje.
-      </h4>
-    </div>
+      <!-- Coluna Direita -->
+      <div class="column">
+        <div class="standard">
+          <h2><strong> Projetos </strong></h2>
+          
+          <h3><strong>Enactus</strong></h3>
+          <h4>Organização internacional sem fins lucrativos que incentiva estudantes a criar soluções empreendedoras para problemas sociais e ambientais.</h4>
+          <h4><strong>Presidente Enactus UNESP Araraquara – 2019 a 2020</strong></h4>
+          <h4>
+            * Desenvolvimento de projetos sociais<br>
+            * Resolução de conflitos<br>
+            * Gestão de pessoas<br>
+            * Comunicação interna<br>
+            * Cultura organizacional<br>
+            * Recrutamento e seleção<br>
+          </h4>
+          <h4><strong>Membro do Projeto Luz do Valle</strong></h4>
+          <h4>Produção e venda de velas ecológicas com renda revertida para mulheres em situação de vulnerabilidade social.</h4>
+          
+          <h3><strong>API</strong></h3>
+          <h4>Projeto de desenvolvimento de aplicativo para gestão de tarefas com foco em produtividade.</h4>
+          <h4><strong>Desenvolvedor Full Stack – 2024</strong></h4>
+          <h4>
+            * Implementação de frontend responsivo<br>
+            * Desenvolvimento de API RESTful<br>
+            * Integração com banco de dados<br>
+            * Testes automatizados<br>
+            * Documentação técnica<br>
+          </h4>
+        </div>
 
-    <div class="standard">
-      <h2> <strong> Cursos </strong> </h2>
-      <h3>Fundamentos de Orientação a Objetos com Kotlin – DIO</h3>
-      <h3>Princípios de Interface de Usuário e Layouts Android – DIO</h3>
-      <h3>Introdução ao Desenvolvimento Moderno de Software – DIO</h3>
-      <h3>Desafios de Código – DIO</h3>
-      <h3>Lógica de Programação Essencial – DIO</h3>
-      <h3>Versionamento de Código com Git e GitHub – DIO</h3>
-      <h3>Estrutura de Dados e Algoritmos</h3>
-      <h3>Mercado de Desenvolvimento Mobile – DIO</h3>
+        <div class="standard">
+          <h2> <strong> Cursos </strong> </h2>
+          <h3>Fundamentos de Orientação a Objetos com Kotlin – DIO</h3>
+          <h3>Princípios de Interface de Usuário e Layouts Android – DIO</h3>
+          <h3>Introdução ao Desenvolvimento Moderno de Software – DIO</h3>
+          <h3>Desafios de Código – DIO</h3>
+          <h3>Lógica de Programação Essencial – DIO</h3>
+          <h3>Versionamento de Código com Git e GitHub – DIO</h3>
+          <h3>Estrutura de Dados e Algoritmos</h3>
+          <h3>Mercado de Desenvolvimento Mobile – DIO</h3>
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -214,6 +236,9 @@
       </div>
     </footer>
   </div>
+
+  <!-- Bootstrap JS (opcional, apenas se precisar de componentes interativos) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
