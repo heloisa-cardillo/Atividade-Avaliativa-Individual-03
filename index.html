@@ -171,22 +171,21 @@ header h1 {
   transition: transform 0.2s;
 }
 
-.curso-item a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #000;
-}
-
-.curso-item:hover {
-  transform: translateX(10px);
-}
-
-.pdf-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}    
+<style>
+ .curso-item a {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-decoration: none;
+   color: #000;
+ }
+ 
+ .pdf-icon {
+   width: 24px;
+   height: 24px;
+   margin-left: 10px;
+ }
+</style>
   </style>
 </head>
 
@@ -233,15 +232,15 @@ header h1 {
           <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
         </div>
 
-     <div class="standard">
-  <h2> <strong> Trabalhos Acadêmicos </strong> </h2>
-  <div class="curso-item">
-    <a href="pdfs/TCC Feminicidio.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>TCC – O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de Janeiro no período de 2000 a 2010</h3>
-    </a>
-  </div>
-  <h4>O trabalho analisa o perfil das vítimas de feminicídio no Rio de Janeiro, contextualiza historicamente o conceito examina as legislações na América Latina e no Brasil. A pesquisa verifica se há um perfil predominante nas vítimas, considerando variáveis como escolaridade, nível socioeconômico e questão racial, além de mapear políticas públicas para redução desses crimes.</h4>
+ <div class="standard">
+ <h2> <strong> Trabalhos Acadêmicos </strong> </h2>
+ <div class="curso-item">
+   <a href="pdfs/TCC Feminicidio.pdf" target="_blank">
+     <h3>TCC – O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de Janeiro no período de 2000 a 2010</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ <h4>O trabalho analisa o perfil das vítimas de feminicídio no Rio de Janeiro, contextualiza historicamente o conceito examina as legislações na América Latina e no Brasil. A pesquisa verifica se há um perfil predominante nas vítimas, considerando variáveis como escolaridade, nível socioeconômico e questão racial, além de mapear políticas públicas para redução desses crimes.</h4>
 </div>
 
         <div class="standard">
@@ -280,71 +279,72 @@ header h1 {
   <h4><strong>Tecnologias utilizadas:</strong> pandas, Google Colab, GitHub, CSS, HTML, JavaScript e Chart.js</h4>
 </h4>
     </div>
-        <div class="standard">
-  <h2> <strong> Cursos </strong> </h2>
-  
-  <div class="curso-item">
-    <a href="pdfs/orientacao a objetos.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Orientação a Objetos com Kotlin – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/layouts.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Princípios de Interface de Usuário e Layouts Android – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/introducao software.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Introdução ao Desenvolvimento Moderno de Software – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/desafio de codigo.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Desafios de Código – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/logica de programacao.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Lógica de Programação Essencial – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/git e github.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Versionamento de Código com Git e GitHub – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/modelagem de dados.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Estrutura de Dados e Algoritmos – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/equipes ageis.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Equipes Ágeis – DIO</h3>
-    </a>
-  </div>
-  
-  <div class="curso-item">
-    <a href="pdfs/desenvolvimento software.pdf" target="_blank">
-      <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-      <h3>Princípios de Desenvolvimento de Software - DIO</h3>
-    </a>
-  </div>
+       <div class="standard">
+ <h2> <strong> Cursos </strong> </h2>
+ 
+ <div class="curso-item">
+   <a href="pdfs/orientacao a objetos.pdf" target="_blank">
+     <h3>Orientação a Objetos com Kotlin – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/layouts.pdf" target="_blank">
+     <h3>Princípios de Interface de Usuário e Layouts Android – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/introducao software.pdf" target="_blank">
+     <h3>Introdução ao Desenvolvimento Moderno de Software – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/desafio de codigo.pdf" target="_blank">
+     <h3>Desafios de Código – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/logica de programacao.pdf" target="_blank">
+     <h3>Lógica de Programação Essencial – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/git e github.pdf" target="_blank">
+     <h3>Versionamento de Código com Git e GitHub – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/modelagem de dados.pdf" target="_blank">
+     <h3>Estrutura de Dados e Algoritmos – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/equipes ageis.pdf" target="_blank">
+     <h3>Equipes Ágeis – DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+ 
+ <div class="curso-item">
+   <a href="pdfs/desenvolvimento software.pdf" target="_blank">
+     <h3>Princípios de Desenvolvimento de Software - DIO</h3>
+     <img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+   </a>
+ </div>
+</div>
 </div>
 </div>
       </div>
