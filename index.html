@@ -172,19 +172,25 @@ header h1 {
 }
 
 <style>
- .curso-item a {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   text-decoration: none;
-   color: #000;
- }
- 
- .pdf-icon {
-   width: 24px;
-   height: 24px;
-   margin-left: 10px;
- }
+  .curso-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .curso-item h3 {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .pdf-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
 </style>
   </style>
 </head>
