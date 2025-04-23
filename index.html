@@ -199,6 +199,26 @@
       margin-left: 10px;
       flex-shrink: 0;
     }
+
+  .video-container {
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tecnologias ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
   </style>
 </head>
 
@@ -406,6 +426,29 @@
             <h4><strong>Tecnologias utilizadas:</strong> pandas, Google Colab, GitHub, CSS, HTML, JavaScript e Chart.js
             </h4>
           </h4>
+          <div class="projeto-item">
+            <h3>Aplicativo Julius Tracker</h3>
+            <div class="projeto-conteudo">
+              <h4>O objetivo do aplicativo é auxiliar no acompanhamento da rotina de medicação do Julius, permitindo o registro de informações como data, nome do medicamento e dosagem. A aplicação organiza esses dados em uma rotina diária, oferecendo maior controle e cuidado com os horários e tipos de medicamentos administrados. O projeto foi inspirado no Julius, meu pássaro da espécie agapornis, que viveu comigo por 10 anos. Julius é, e sempre será, o amor da minha vida.</h4>
+              
+              <div class="tecnologias">
+                <p><strong>Tecnologias utilizadas:</strong></p>
+                <ul>
+                  <li>Android Studio</li>
+                  <li>Kotlin</li>
+                  <li>Figma (para prototipagem)</li>
+                </ul>
+              </div>
+              
+              <div class="video-container">
+                <!-- Vídeo local armazenado no computador -->
+                <video controls width="100%">
+                  <source src="assets/videos/julius-tracker-demo.mp4" type="video/mp4">
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
