@@ -1,9 +1,8 @@
-# Portfólio Heloisa Cardillo
+**Portfólio Heloisa Cardillo**
 
-Repositório com o código-fonte do meu portfolio profissional.
+Sou Heloisa Cardillo, graduanda em Desenvolvimento de Software Multiplataforma pela FATEC São José dos Campos, com formação anterior em Ciências Sociais pela UNESP.
 
-## 🔗 Link para o site
-[Acessar meu portfólio](https://seulink.com)
+Meu portfólio apresenta projetos práticos nas áreas de desenvolvimento web, mobile e análise de dados, além de destacar minha atuação em projetos sociais e liderança de equipes.
+Com domínio de tecnologias como Kotlin, Python, JavaScript, HTML, CSS e integração de sistemas, busco sempre unir habilidades técnicas e visão social em soluções inovadoras.
 
-## 👩‍💻 Sobre
-Portfólio desenvolvido com HTML, CSS e Bootstrap, destacando minha formação, projetos e habilidades como desenvolvedora.
+Conheça meus projetos, competências e experiências: **Acesse meu portfólio.** 🚀
