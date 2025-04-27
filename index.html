@@ -2,460 +2,454 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heloisa Cardillo Portifolio</title>
-  <meta name="description" content="portifolio design digital FATEC">
-  <link rel="icon" href="image/ideia.gif" type="image/gif">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heloisa Cardillo Portifolio</title>
+    <meta name="description" content="portifolio design digital FATEC">
+    <link rel="icon" href="image/ideia.gif" type="image/gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    body {
-      background: linear-gradient(to top, #c93384, #e44f9c, #eb9ac0, #f3aacb, #f7bfd8, #fbd5e5, #fdeaf2, #ffffff);
-      margin: 0;
-      font-family: Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+    <style>
+        body {
+            background: linear-gradient(to top, #c93384, #e44f9c, #eb9ac0, #f3aacb, #f7bfd8, #fbd5e5, #fdeaf2, #ffffff);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 28px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -10px;
-    }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
 
-    .col {
-      flex: 1;
-      padding: 0 10px;
-      min-width: 0;
-    }
+        .col {
+            flex: 1;
+            padding: 0 10px;
+            min-width: 0;
+        }
 
-    h1 {
-      text-align: center;
-      color: #000;
-      margin-top: 40px;
-      font-size: 36px;
-    }
+        h1 {
+            text-align: center;
+            color: #000;
+            margin-top: 40px;
+            font-size: 36px;
+        }
 
-    h2 {
-      font-size: 24px;
-      margin-left: 20px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
+        h2 {
+            font-size: 24px;
+            margin-left: 20px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
 
-    h3 {
-      color: #000;
-      font-size: 20px;
-      margin: 0px;
-      padding: 0;
-    }
+        h3 {
+            color: #000;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    h4 {
-      color: #000;
-      font-size: 16px;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
+        h4 {
+            color: #000;
+            font-size: 16px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
 
-    .apresentacao {
-      font-size: 16px;
-      margin-top: 8px;
-      margin-bottom: 40px;
-    }
+        .apresentacao {
+            font-size: 16px;
+            margin-top: 8px;
+            margin-bottom: 40px;
+        }
 
-    .contatoUm {
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
-      margin: 24px 0 20px 0;
-      align-items: center;
-      padding-right: 0;
-    }
+        .contatoUm {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            margin: 24px 0 20px 0;
+            align-items: center;
+            padding-right: 0;
+        }
 
-    .contatoDois {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 20px;
-      margin: 24px 0 20px 0;
-      color: #ffffff;
-    }
+        .contatoDois {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            margin: 24px 0 20px 0;
+            color: #ffffff;
+        }
 
-    .contatoUm img,
-    .contatoDois img {
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
-      border-radius: 20%;
-      padding: 6px;
-      background-color: transparent;
-    }
+        .contatoUm img,
+        .contatoDois img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 20%;
+            padding: 6px;
+            background-color: transparent;
+        }
 
-    .contatoUm img {
-      border: 2px solid #c93384;
-    }
+        .contatoUm img {
+            border: 2px solid #c93384;
+        }
 
-    .contatoDois img {
-      border: 2px solid #fff;
-    }
+        .contatoDois img {
+            border: 2px solid #fff;
+        }
 
-    .standard {
-      color: #000;
-      text-align: left;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      background-color: rgba(255, 255, 255, 0.2);
-      height: auto;
-    }
+        .standard {
+            color: #000;
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+            height: auto;
+        }
 
-    footer {
-      margin-top: auto;
-      width: 100%;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0 28px;
-    }
+        footer {
+            margin-top: auto;
+            width: 100%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 28px;
+        }
 
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
 
-      .col {
-        width: 100%;
-      }
-    }
+            .col {
+                width: 100%;
+            }
+        }
 
-    .header-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
 
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 2px solid #c93384;
-      padding: 6px;
-      background-color: transparent;
-    }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #c93384;
+            padding: 6px;
+            background-color: transparent;
+        }
 
-    .profile-pic img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-    header h1 {
-      margin: 0;
-      color: #000;
-      font-size: 36px;
-    }
+        header h1 {
+            margin: 0;
+            color: #000;
+            font-size: 36px;
+        }
 
-    .curso-item {
-      margin-bottom: 10px;
-      transition: transform 0.2s;
-    }
+        .curso-item {
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
 
-    .curso-item a {
-      text-decoration: none;
-      color: #000;
-    }
+        .curso-item a {
+            text-decoration: none;
+            color: #000;
+        }
 
-    .pdf-icon {
-      width: 16px;
-      height: 16px;
-      margin-left: 4px;
-      display: inline;
-      vertical-align: middle;
-      flex-shrink: 0;
-    }
+        .pdf-icon {
+            width: 16px;
+            height: 16px;
+            margin-left: 4px;
+            display: inline;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
 
-    .curso-item h4 strong {
-      display: inline;
-    }
+        .curso-item h4 strong {
+            display: inline;
+        }
 
-    .video-container {
-      margin: 20px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: hidden;
-    }
+        .video-container {
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-    .video-container video {
-      display: block;
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-    }
+        .video-container video {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    .tecnologias ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-  </style>
+        .tecnologias ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <div class="header-container">
-        <div class="profile-pic">
-          <img src="image/Screenshot_20250330-143545.png" alt="Heloisa Cardillo">
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="profile-pic">
+                    <img src="image/Screenshot_20250330-143545.png" alt="Heloisa Cardillo">
+                </div>
+                <h1>Heloisa Cardillo</h1>
+            </div>
+            <div class="contatoUm">
+                <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
+                    <img src="image/linkedin_icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/heloisa-cardillo" target="_blank">
+                    <img src="image/github_icon.png" alt="GitHub">
+                </a>
+                <a href="mailto:heloisacardillo@gmail.com">
+                    <img src="image/gmail_icon.png" alt="Email">
+                </a>
+                <a href="pdfs/CV Heloisa Cardillo Lima.pdf" target="_blank">
+                    <img src="image/curriculo.png" alt="Currículo">
+                </a>
+            </div>
+        </header>
+
+        <div class="apresentacao">
+            <h3>Me chamo Heloisa, sou de Poços de Caldas (MG). Sou formada em Ciências Sociais pela UNESP Araraquara e
+                atualmente curso Desenvolvimento de Software Multiplataforma (DSM) na FATEC São José dos Campos.</h3>
+
+            <h3>🐇 Tutora de 7 coelhinhos fofos</h3>
+            <h3>📚 Gosto muito de ler, principalmente livros de suspense com assassinatos.</h3>
+            <h3>🧘‍♀️ Pratico yoga e pilates no meu tempo livre.</h3>
         </div>
-        <h1>Heloisa Cardillo</h1>
-      </div>
-      <div class="contatoUm">
-        <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
-          <img src="image/linkedin_icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/heloisa-cardillo" target="_blank">
-          <img src="image/github_icon.png" alt="GitHub">
-        </a>
-        <a href="mailto:heloisacardillo@gmail.com">
-          <img src="image/gmail_icon.png" alt="Email">
-        </a>
-        <a href="pdfs/CV Heloisa Cardillo Lima.pdf" target="_blank">
-          <img src="image/curriculo.png" alt="Currículo">
-        </a>
-      </div>
-    </header>
 
-    <div class="apresentacao">
-      <h3>Me chamo Heloisa, sou de Poços de Caldas (MG). Sou formada em Ciências Sociais pela UNESP Araraquara e
-        atualmente curso Desenvolvimento de Software Multiplataforma (DSM) na FATEC São José dos Campos.</h3>
+        <div class="row">
+            <div class="col">
+                <div class="standard">
+                    <h2> <strong> Formação Acadêmica: </strong> </h2>
+                    <h3><strong>Pós-graduação</strong></h3>
+                    <h4>Antropologia Cultural e Social - Faculdade do Líbano - 2025 </h4>
+                    <h3><strong>Graduação</strong></h3>
+                    <h4>Desenvolvimento de Software Multiplataformas - FATEC São José dos Campos - 2025–2027</h4>
+                    <h4>Ciências Sociais - UNESP - 2018–2022</h4>
+                    <h3><strong>Curso</strong></h3>
+                    <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
+                </div>
 
-      <h3>🐇 Tutora de 7 coelhinhos fofos</h3>
-      <h3>📚 Gosto muito de ler, principalmente livros de suspense com assassinatos.</h3>
-      <h3>🧘‍♀️ Pratico yoga e pilates no meu tempo livre.</h3>
+                <div class="standard">
+                    <h2><strong> Hard Skills </strong></h2>
+                    <h4>
+                        * Linguagens de Programação: Kotlin, Python, JavaScript<br>
+                        * Linguagens de Marcação e Estilo: HTML, CSS<br>
+                        * Bibliotecas e Frameworks: Chart.js, Pandas<br>
+                        * Desenvolvimento Android e Web<br>
+                        * Integração frontend/backend: com Python e JavaScript<br>
+                        * Controle de versão: Git e GitHub<br>
+                        * Ferramentas: Google Colab
+                    </h4>
+                </div>
+
+                <div class="standard">
+                    <h2><strong> Soft Skills </strong></h2>
+                    <h4>
+                        * Liderança<br>
+                        * Trabalho em equipe<br>
+                        * Organização de projetos<br>
+                        * Resolução de conflitos<br>
+                        * Gestão de pessoas<br>
+                        * Empatia e foco social
+                    </h4>
+                </div>
+
+                <div class="standard">
+                    <h2> <strong> Trabalhos Acadêmicos </strong> </h2>
+                    <div class="curso-item">
+                        <a href="pdfs/TCC Feminicidio.pdf" target="_blank">
+                            <h4><strong>O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de Janeiro no
+                                    período de 2000 a 2010</strong><img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+                    <h4>O trabalho analisa o perfil das vítimas de feminicídio no Rio de Janeiro, contextualiza historicamente o
+                        conceito examina as legislações na América Latina e no Brasil. A pesquisa verifica se há um perfil
+                        predominante nas vítimas, considerando variáveis como escolaridade, nível socioeconômico e questão racial,
+                        além de mapear políticas públicas para redução desses crimes.</h4>
+                </div>
+
+                <div class="standard">
+                    <h2> <strong>Enactus</strong></h2>
+                    <h4><strong>Organização internacional sem fins lucrativos que incentiva estudantes a criar soluções empreendedoras para problemas sociais e ambientais</strong></h4>
+                    <h4><strong>Hackthon Enactus Brasil – 2020 </strong></h4>
+                    <h4>Líder de projeto semifinalista entre 120 equipes – ENACTUS Brasil 2020<br>
+                        Projeto criado na pandemia com foco em venda de alimentos orgânicos por produtores rurais de assentamento em
+                        Araraquara. Está em funcionamento até hoje.
+                    </h4>
+                    <h4><strong>Presidente Enactus UNESP Araraquara – 2019 a 2020</strong></h4>
+                    <h4>
+                        * Desenvolvimento de projetos sociais<br>
+                        * Resolução de conflitos<br>
+                        * Gestão de pessoas<br>
+                        * Comunicação interna<br>
+                        * Cultura organizacional<br>
+                        * Recrutamento e seleção<br>
+                    </h4>
+                    <h4><strong>Membro do Projeto Luz do Valle – 2018 a 2019</strong>
+                    </h4>
+                    <h4 style="margin-bottom: 30px;">Produção e venda de velas ecológicas com renda revertida para mulheres em
+                        situação de vulnerabilidade social.</h4>
+                </div>
+
+                <div class="standard">
+                    <h2> <strong> Cursos </strong> </h2>
+
+                    <div class="curso-item">
+                        <a href="pdfs/orientacao a objetos.pdf" target="_blank">
+                            <h4>Orientação a Objetos com Kotlin – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/layouts.pdf" target="_blank">
+                            <h4>Princípios de Interface de Usuário e Layouts Android – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/introducao software.pdf" target="_blank">
+                            <h4>Introdução ao Desenvolvimento Moderno de Software – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/desafio de codigo.pdf" target="_blank">
+                            <h4>Desafios de Código – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
+                            </h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/logica de programacao.pdf" target="_blank">
+                            <h4>Lógica de Programação Essencial – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/git e github.pdf" target="_blank">
+                            <h4>Versionamento de Código com Git e GitHub – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/modelagem de dados.pdf" target="_blank">
+                            <h4>Estrutura de Dados e Algoritmos – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/equipes ageis.pdf" target="_blank">
+                            <h4>Equipes Ágeis – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+
+                    <div class="curso-item">
+                        <a href="pdfs/desenvolvimento software.pdf" target="_blank">
+                            <h4>Princípios de Desenvolvimento de Software - DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="standard">
+                    <h2> <strong> Idiomas </strong> </h2>
+                    <h4><strong>Inglês</strong> - B2 (intermediário-alto)</h4>
+                    <h4><strong>Francês</strong> - A2 (básico)</h4>
+                </div>
+
+                <div class="standard">
+                    <h2><strong> Projetos </strong></h2>
+                    <div class="curso-item">
+                        <a href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic" target="_blank">
+                            <h4><strong>API</strong><img src="image/codigo.png" alt="GitHub Code" class="pdf-icon"></h4>
+                        </a>
+                    </div>
+                    <h4>Aprendizagem por Projetos Integrados. Criação de um site com banco de dados mostrando os principais
+                        produtos importados e exportados nos municípios de São Paulo.</h4>
+                    <h4><strong>Front end – 2025</strong></h4>
+                    <h4>
+                        * Criação de gráficos em charts.js com css<br>
+                        * Integração com o banco de dados python<br>
+                        * Criação de filtros para os gráficos<br>
+                    </h4>
+                    <h4><strong>Tecnologias utilizadas:</strong> pandas, Google Colab, GitHub, CSS, HTML, JavaScript e Chart.js
+                    </h4>
+                </div>
+
+                <div class="standard">
+                    <h2><strong> Aplicativo Julius Tracker </strong></h2>
+                    <h4>O objetivo do aplicativo é auxiliar no acompanhamento da rotina de medicação do Julius, permitindo o
+                        registro de informações como data, nome do medicamento e dosagem. A aplicação organiza esses dados em uma
+                        rotina diária, oferecendo maior controle e cuidado com os horários e tipos de medicamentos administrados. O
+                        projeto foi inspirado no Julius, meu pássaro da espécie agapornis, que viveu comigo por 10 anos. Julius é, e
+                        sempre será, o amor da minha vida.</h4>
+
+                    <h4><strong>Tecnologias utilizadas:</strong> Android Studio, Kotlin e Figma (prototipagem)</h4>
+
+                    <div class="video-container">
+                        <video controls width="100%">
+                            <source src="assets/videos/julius-tracker-demo.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="standard">
-          <h2> <strong> Formação Acadêmica: </strong> </h2>
-          <h3><strong>Pós-graduação</strong></h3>
-          <h4>Tecnologia da Informação e Ciência de Dados - Faculdade Líbano - 2025 </h4>
-          <h3><strong>Graduação</strong></h3>
-          <h4>Desenvolvimento de Software Multiplataformas - FATEC São José dos Campos - 2025–2027</h4>
-          <h4>Ciências Sociais - UNESP - 2018–2022</h4>
-          <h3><strong>Curso</strong></h3>
-          <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
+    <footer>
+        <div class="contatoDois">
+            <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
+                <img src="image/linkedin_icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/heloisa-cardillo" target="_blank">
+                <img src="image/github_icon.png" alt="GitHub">
+            </a>
+            <a href="mailto:heloisacardillo@gmail.com">
+                <img src="image/gmail_icon.png" alt="Email">
+            </a>
+            <a href="pdfs/CV Heloisa Cardillo Lima.pdf" target="_blank">
+                <img src="image/curriculo.png" alt="Currículo">
+            </a>
         </div>
-
-        <div class="standard">
-          <h2><strong> Hard Skills </strong></h2>
-          <h4>
-            * Linguagens de Programação: Kotlin, Python, JavaScript<br>
-            * Linguagens de Marcação e Estilo: HTML, CSS<br>
-            * Bibliotecas e Frameworks: Chart.js, Pandas<br>
-            * Desenvolvimento Android e Web<br>
-            * Integração frontend/backend: com Python e JavaScript<br>
-            * Controle de versão: Git e GitHub<br>
-            * Ferramentas: Google Colab
-          </h4>
-        </div>
-
-        <div class="standard">
-          <h2><strong> Soft Skills </strong></h2>
-          <h4>
-            * Liderança<br>
-            * Trabalho em equipe<br>
-            * Organização de projetos<br>
-            * Resolução de conflitos<br>
-            * Gestão de pessoas<br>
-            * Empatia e foco social
-          </h4>
-        </div>
-
-        <div class="standard">
-          <h2> <strong> Trabalhos Acadêmicos </strong> </h2>
-          <div class="curso-item">
-            <a href="pdfs/TCC Feminicidio.pdf" target="_blank">
-              <h4><strong>O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de Janeiro no
-                  período de 2000 a 2010</strong><img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
-            </a>
-          </div>
-          <h4>O trabalho analisa o perfil das vítimas de feminicídio no Rio de Janeiro, contextualiza historicamente o
-            conceito examina as legislações na América Latina e no Brasil. A pesquisa verifica se há um perfil
-            predominante nas vítimas, considerando variáveis como escolaridade, nível socioeconômico e questão racial,
-            além de mapear políticas públicas para redução desses crimes.</h4>
-        </div>
-
-        <div class="standard">
-          <h2> <strong> Hackathon Enactus</strong></h2>
-          <h4>Líder de projeto semifinalista entre 120 equipes – ENACTUS Brasil 2020<br>
-            Projeto criado na pandemia com foco em venda de alimentos orgânicos por produtores rurais de assentamento em
-            Araraquara. Está em funcionamento até hoje.
-          </h4>
-        </div>
-
-        <div class="standard">
-          <h2> <strong> Cursos </strong> </h2>
-
-          <div class="curso-item">
-            <a href="pdfs/orientacao a objetos.pdf" target="_blank">
-              <h4>Orientação a Objetos com Kotlin – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/layouts.pdf" target="_blank">
-              <h4>Princípios de Interface de Usuário e Layouts Android – DIO<img src="image/pdf_icon.png" alt="PDF"
-                  class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/introducao software.pdf" target="_blank">
-              <h4>Introdução ao Desenvolvimento Moderno de Software – DIO<img src="image/pdf_icon.png" alt="PDF"
-                  class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/desafio de codigo.pdf" target="_blank">
-              <h4>Desafios de Código – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon">
-              </h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/logica de programacao.pdf" target="_blank">
-              <h4>Lógica de Programação Essencial – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/git e github.pdf" target="_blank">
-              <h4>Versionamento de Código com Git e GitHub – DIO<img src="image/pdf_icon.png" alt="PDF"
-                  class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/modelagem de dados.pdf" target="_blank">
-              <h4>Estrutura de Dados e Algoritmos – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/equipes ageis.pdf" target="_blank">
-              <h4>Equipes Ágeis – DIO<img src="image/pdf_icon.png" alt="PDF" class="pdf-icon"></h4>
-            </a>
-          </div>
-
-          <div class="curso-item">
-            <a href="pdfs/desenvolvimento software.pdf" target="_blank">
-              <h4>Princípios de Desenvolvimento de Software - DIO<img src="image/pdf_icon.png" alt="PDF"
-                  class="pdf-icon"></h4>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="standard">
-          <h2> <strong> Idiomas </strong> </h2>
-          <h4>Inglês - B2 (intermediário-alto)</h4>
-          <h4>Francês - A2 (básico)</h4>
-        </div>
-
-        <div class="standard">
-          <h2><strong> Projetos </strong></h2>
-
-          <h3><strong>Enactus</strong></h3>
-          <h4>Organização internacional sem fins lucrativos que incentiva estudantes a criar soluções empreendedoras
-            para problemas sociais e ambientais.</h4>
-          <h4><strong>Presidente Enactus UNESP Araraquara – 2019 a 2020</strong></h4>
-          <h4>
-            * Desenvolvimento de projetos sociais<br>
-            * Resolução de conflitos<br>
-            * Gestão de pessoas<br>
-            * Comunicação interna<br>
-            * Cultura organizacional<br>
-            * Recrutamento e seleção<br>
-          </h4>
-          <h4><strong>Membro do Projeto Luz do Valle</strong></h4>
-          <h4 style="margin-bottom: 30px;">Produção e venda de velas ecológicas com renda revertida para mulheres em
-            situação de vulnerabilidade social.</h4>
-
-          <h3>
-            <strong>API</strong>
-            <a href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic" target="_blank">
-              <img src="image/codigo.png" alt="GitHub Code" class="pdf-icon">
-            </a>
-          </h3>
-          <h4>Aprendizagem por Projetos Integrados. Criação de um site com banco de dados mostrando os principais
-            produtos importados e exportados nos municípios de São Paulo.</h4>
-          <h4><strong>Front end – 2025</strong></h4>
-          <h4>
-            * Criação de gráficos em charts.js com css<br>
-            * Integração com o banco de dados python<br>
-            * Criação de filtros para os gráficos<br>
-          </h4>
-          <h4><strong>Tecnologias utilizadas:</strong> pandas, Google Colab, GitHub, CSS, HTML, JavaScript e Chart.js
-          </h4>
-        </div>
-
-        <div class="standard">
-          <h2><strong> Aplicativo Julius Tracker </strong></h2>
-          <h4>O objetivo do aplicativo é auxiliar no acompanhamento da rotina de medicação do Julius, permitindo o
-            registro de informações como data, nome do medicamento e dosagem. A aplicação organiza esses dados em uma
-            rotina diária, oferecendo maior controle e cuidado com os horários e tipos de medicamentos administrados. O
-            projeto foi inspirado no Julius, meu pássaro da espécie agapornis, que viveu comigo por 10 anos. Julius é, e
-            sempre será, o amor da minha vida.</h4>
-
-          <h4><strong>Tecnologias utilizadas:</strong> Android Studio, Kotlin e Figma (prototipagem)</h4>
-
-          <div class="video-container">
-            <video controls width="100%">
-              <source src="assets/videos/julius-tracker-demo.mp4" type="video/mp4">
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="contatoDois">
-      <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
-        <img src="image/linkedin_icon.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/heloisa-cardillo" target="_blank">
-        <img src="image/github_icon.png" alt="GitHub">
-      </a>
-      <a href="mailto:heloisacardillo@gmail.com">
-        <img src="image/gmail_icon.png" alt="Email">
-      </a>
-      <a href="pdfs/CV Heloisa Cardillo Lima.pdf" target="_blank">
-        <img src="image/curriculo.png" alt="Currículo">
-      </a>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
