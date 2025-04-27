@@ -238,12 +238,14 @@
         }
 
         .video-container {
-            margin: 20px 0;
+            margin: 20px auto;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
             border-radius: 12px;
             overflow: hidden;
             border: 3px solid rgba(255, 255, 255, 0.4);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 80%;
+            max-width: 640px;
         }
 
         .video-container:hover {
@@ -254,8 +256,13 @@
         .video-container video {
             display: block;
             width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+            height: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .video-container {
+                width: 95%;
+            }
         }
 
         .tecnologias ul {
@@ -263,7 +270,7 @@
             margin-left: 20px;
         }
 
-        
+        /* Novo estilo para as skills */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -493,7 +500,7 @@
                     </div>
 
                     <div class="video-container">
-                        <video controls width="100%">
+                        <video controls>
                             <source src="app/studio64_mvEB55NE8e.mp4" type="video/mp4">
                             Seu navegador não suporta o elemento de vídeo.
                         </video>
