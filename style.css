@@ -156,6 +156,20 @@ footer {
     padding: 0 28px;
 }
 
+.trademark {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trademark h3 {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
