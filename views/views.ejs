@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - <%= estudante.nome %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="profile-pic">
+                    <img src="/image/Screenshot_20250330-143545.png" alt="<%= estudante.nome %>">
+                </div>
+                <h1><%= estudante.nome %></h1>
+            </div>
+            <div class="contatoUm">
+                <a href="/pdfs/Heloisa Cardillo CV.pdf" target="_blank">
+                    <img src="/image/curriculo.png" alt="Currículo">
+                </a>
+                <a href="mailto:heloisacardillo@gmail.com">
+                    <img src="/image/gmail_icon.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
+                    <img src="/image/linkedin_icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/heloisa-cardillo" target="_blank">
+                    <img src="/image/github_icon.png" alt="GitHub">
+                </a>
+            </div>
+        </header>
+
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="/" style="padding: 10px 20px; background: linear-gradient(to right, #c93384, #e44f9c); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">← Voltar ao Início</a>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="standard">
+                    <h2><strong>Sobre Mim</strong></h2>
+                    <h4><strong>Nome Completo:</strong> <%= estudante.nomeCompleto %></h4>
+                    <h4><strong>Curso:</strong> <%= estudante.curso %></h4>
+                    <h4><strong>Instituição:</strong> <%= estudante.instituicao %></h4>
+                    <h4><strong>Ano de Ingresso:</strong> <%= estudante.anoIngresso %></h4>
+                </div>
+
+                <div class="standard">
+                    <h2><strong>Formação Acadêmica</strong></h2>
+                    <h3><strong>Pós-graduação</strong></h3>
+                    <h4>Antropologia Cultural e Social - Faculdade do Líbano - 2025</h4>
+                    <h3 style="margin-top: 20px;"><strong>Graduação</strong></h3>
+                    <h4>Desenvolvimento de Software Multiplataformas - FATEC São José dos Campos - 2025–2027</h4>
+                    <h4>Ciências Sociais - UNESP - 2018–2022</h4>
+                    <h3 style="margin-top: 20px;"><strong>Curso</strong></h3>
+                    <h4>Agente de Projetos Sociais - Instituto Federal Farroupilha - 2020</h4>
+                </div>
+
+                <div class="standard">
+                    <h2><strong>Hard Skills</strong></h2>
+                    <div class="skills-container">
+                        <div class="skill-item">Kotlin</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">Chart.js</div>
+                        <div class="skill-item">Node</div>
+                        <div class="skill-item">Pandas</div>
+                        <div class="skill-item">Desenvolvimento Android</div>
+                        <div class="skill-item">Desenvolvimento Web</div>
+                        <div class="skill-item">Integração Frontend/Backend</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">GitHub</div>
+                        <div class="skill-item">Google Colab</div>
+                    </div>
+                </div>
+
+                <div class="standard">
+                    <h2><strong>Soft Skills</strong></h2>
+                    <div class="skills-container">
+                        <div class="skill-item">Liderança</div>
+                        <div class="skill-item">Trabalho em equipe</div>
+                        <div class="skill-item">Organização de projetos</div>
+                        <div class="skill-item">Resolução de conflitos</div>
+                        <div class="skill-item">Gestão de pessoas</div>
+                        <div class="skill-item">Empatia</div>
+                        <div class="skill-item">Foco social</div>
+                        <div class="skill-item">Visão estratégica</div>
+                        <div class="skill-item">Pensamento crítico</div>
+                        <div class="skill-item">Organização e gestão de tempo</div>
+                        <div class="skill-item">Escuta ativa</div>
+                    </div>
+                </div>
+
+                <div class="standard">
+                    <h2><strong>Idiomas</strong></h2>
+                    <div class="idioma-item">
+                        <h4><strong>Inglês</strong> - B2 (intermediário-alto)</h4>
+                        <div class="progress-container" style="width: 164px;">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="idioma-item">
+                        <h4><strong>Francês</strong> - A2 (básico)</h4>
+                        <div class="progress-container" style="width: 164px;">
+                            <div class="progress-bar" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contatoDois">
+                    <a href="https://github.com/heloisa-cardillo" target="_blank">
+                        <img src="/image/github_icon.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/heloisa-cardillo-lima/" target="_blank">
+                        <img src="/image/linkedin_icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:heloisacardillo@gmail.com">
+                        <img src="/image/gmail_icon.png" alt="Email">
+                    </a>
+                    <a href="/pdfs/Heloisa Cardillo CV.pdf" target="_blank">
+                        <img src="/image/curriculo.png" alt="Currículo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="trademark">
+            <h3>Portifólio Heloisa Cardillo Lima &reg;</h3>
+        </div>
+    </footer>
+</body>
+</html>

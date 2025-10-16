@@ -1,0 +1,36 @@
+<%- include('header', { titulo: 'Dashboard' }) %>
+
+    <div class="row">
+        <div class="col">
+            <div class="standard">
+                <h2><strong>Estatísticas do Portfólio</strong></h2>
+
+                <div style="margin-top: 30px;">
+                    <h3><strong>📚 Total de Disciplinas:</strong></h3>
+                    <h4 style="font-size: 48px; color: #c93384; text-align: center; margin: 20px 0;">
+                        <%= estatisticas.totalDisciplinas %>
+                    </h4>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <h3><strong>✅ Projetos Concluídos:</strong></h3>
+                    <h4 style="font-size: 48px; color: #c93384; text-align: center; margin: 20px 0;">
+                        <%= estatisticas.projetosConcluidos %>
+                    </h4>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <h3><strong>💻 Top 5 Tecnologias Mais Usadas:</strong></h3>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <% estatisticas.tecnologiasMaisUsadas.forEach(function(tech, index) { %>
+                            <li>
+                                <h4><strong>
+                                        <%= index + 1 %>. <%= tech[0] %>
+                                    </strong> - usado em <%= tech[1] %> projeto(s)</h4>
+                            </li>
+                            <% }); %>
+                    </ul>
+                </div>
+            </div>
+
+            <%- include('footer') %>

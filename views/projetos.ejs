@@ -1,0 +1,82 @@
+<%- include('header', { titulo: 'Projetos' }) %>
+
+    <div class="row">
+        <div class="col">
+            <div class="standard">
+                <h2><strong>Meus Projetos</strong></h2>
+
+                <% projetos.forEach(function(projeto) { %>
+                    <div style="margin-bottom: 40px;">
+                        <div class="curso-item">
+                            <% if (projeto.link) { %>
+                                <a href="<%= projeto.link %>" target="_blank">
+                                    <h3><strong>
+                                            <%= projeto.titulo %>
+                                        </strong></h3>
+                                </a>
+                                <% } else { %>
+                                    <h3><strong>
+                                            <%= projeto.titulo %>
+                                        </strong></h3>
+                                    <% } %>
+                        </div>
+
+                        <h4>
+                            <%= projeto.descricao %>
+                        </h4>
+                        <h4>Atuação como <strong>
+                                <%= projeto.papel %>
+                            </strong>. <%= projeto.detalhes %>
+                        </h4>
+
+                        <h4 style="margin-top: 15px;"><strong>Tecnologias utilizadas:</strong></h4>
+                        <div class="skills-container">
+                            <% projeto.tecnologias.forEach(function(tech) { %>
+                                <div class="skill-item">
+                                    <%= tech %>
+                                </div>
+                                <% }); %>
+                        </div>
+                    </div>
+                    <% }); %>
+            </div>
+
+            <div class="standard">
+                <h2><strong>Aplicativo Julius Tracker</strong></h2>
+                <h4>O objetivo do aplicativo é auxiliar no acompanhamento da rotina de medicação do Julius, permitindo o
+                    registro de informações como data, nome do medicamento e dosagem. A aplicação organiza esses dados
+                    em uma rotina diária, oferecendo maior controle e cuidado com os horários e tipos de medicamentos
+                    administrados. O projeto foi inspirado no Julius, meu pássaro da espécie agapornis, que viveu comigo
+                    por 10 anos.</h4>
+
+                <h4><strong>Tecnologias utilizadas:</strong></h4>
+                <div class="skills-container">
+                    <div class="skill-item">Android Studio</div>
+                    <div class="skill-item">Kotlin</div>
+                    <div class="skill-item">Figma (prototipagem)</div>
+                </div>
+
+                <div class="video-container">
+                    <video controls>
+                        <source src="/app/studio64_mvEB55NE8e.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+            </div>
+
+            <div class="standard">
+                <h2><strong>Trabalho Acadêmico</strong></h2>
+                <div class="curso-item">
+                    <a href="/pdfs/TCC Feminicidio.pdf" target="_blank">
+                        <h4><strong>O fenômeno do Feminicídio no Brasil: Estudo de caso sobre o Município do Rio de
+                                Janeiro no período de 2000 a 2010</strong><img src="/image/pdf_icon.png" alt="PDF"
+                                class="pdf-icon"></h4>
+                    </a>
+                </div>
+                <h4>O trabalho analisa o perfil das vítimas de feminicídio no Rio de Janeiro, contextualiza
+                    historicamente o conceito examina as legislações na América Latina e no Brasil. A pesquisa verifica
+                    se há um perfil predominante nas vítimas, considerando variáveis como escolaridade, nível
+                    socioeconômico e questão racial, além de mapear políticas públicas para redução desses crimes.</h4>
+            </div>
+
+            <%- include('footer') %>
