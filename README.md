@@ -1,5 +1,28 @@
-**Portfólio**
+# Portfólio Acadêmico - Heloisa Cardillo
 
-Sou **Heloisa Cardillo**, graduanda em Desenvolvimento de Software Multiplataforma pela FATEC São José dos Campos, com formação anterior em Ciências Sociais pela UNESP.
+## Pré-requisitos
 
-Conheça meus projetos, competências e experiências: [Acesse meu portfólio 🚀](https://heloisa-cardillo.github.io/heloisacardillo.site/?classId=3ab2a8e3-5827-4df5-b454-8b465b0ae6c1&assignmentId=5752ca39-2aa3-46da-b83f-4dc702487b28&submissionId=3fc49d44-3d84-4a19-e64a-cda371aa5d5a)
+[Node.js](https://nodejs.org/) (versão 14 ou superior)
+
+## Como executar o projeto
+
+### 1. Clone ou baixe o repositório
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DA_PASTA>
+```
+
+### 2. Instale as dependências
+```bash
+npm install
+```
+
+### 3. Execute o servidor
+```bash
+node app.js
+```
+
+### 4. Acesse no navegador
+```
+http://localhost:3000
+```
