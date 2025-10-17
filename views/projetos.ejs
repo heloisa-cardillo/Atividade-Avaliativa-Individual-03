@@ -1,5 +1,99 @@
 <%- include('header', { titulo: 'Projetos' }) %>
 
+    <div style="margin-bottom: 20px;">
+        <button onclick="mostrarFormAdicionar()"
+            style="background: linear-gradient(to right, #c93384, #e44f9c); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">+
+            Adicionar Projeto</button>
+    </div>
+
+    <div id="formAdicionar"
+        style="display: none; background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; border: 2px solid #e44f9c;">
+        <h3><strong>Adicionar Novo Projeto</strong></h3>
+        <form id="formNovoProjeto" onsubmit="adicionarProjeto(event)">
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Título:</strong></label>
+                <input type="text" id="novoTitulo" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Descrição:</strong></label>
+                <textarea id="novoDescricao" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; min-height: 100px; font-size: 14px;"></textarea>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Papel:</strong></label>
+                <input type="text" id="novoPapel" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Detalhes:</strong></label>
+                <textarea id="novoDetalhes" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; min-height: 100px; font-size: 14px;"></textarea>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Tecnologias (separadas por
+                        vírgula):</strong></label>
+                <input type="text" id="novoTecnologias" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;"
+                    placeholder="HTML, CSS, JavaScript">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Link (opcional):</strong></label>
+                <input type="url" id="novoLink"
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <button type="submit"
+                style="background: linear-gradient(to right, #c93384, #e44f9c); color: white; padding: 10px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-right: 10px;">Salvar
+                Projeto</button>
+            <button type="button" onclick="esconderFormAdicionar()"
+                style="background: #666; color: white; padding: 10px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">Cancelar</button>
+        </form>
+    </div>
+
+    <div id="formEditar"
+        style="display: none; background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; border: 2px solid #e44f9c;">
+        <h3><strong>Editar Projeto</strong></h3>
+        <form id="formEditarProjeto" onsubmit="atualizarProjeto(event)">
+            <input type="hidden" id="editId">
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Título:</strong></label>
+                <input type="text" id="editTitulo" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Descrição:</strong></label>
+                <textarea id="editDescricao" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; min-height: 100px; font-size: 14px;"></textarea>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Papel:</strong></label>
+                <input type="text" id="editPapel" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Detalhes:</strong></label>
+                <textarea id="editDetalhes" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; min-height: 100px; font-size: 14px;"></textarea>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Tecnologias (separadas por
+                        vírgula):</strong></label>
+                <input type="text" id="editTecnologias" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px;"><strong>Link (opcional):</strong></label>
+                <input type="url" id="editLink"
+                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            </div>
+            <button type="submit"
+                style="background: linear-gradient(to right, #c93384, #e44f9c); color: white; padding: 10px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-right: 10px;">Atualizar
+                Projeto</button>
+            <button type="button" onclick="esconderFormEditar()"
+                style="background: #666; color: white; padding: 10px 25px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">Cancelar</button>
+        </form>
+    </div>
+
     <div class="row">
         <div class="col">
             <div class="standard">
@@ -7,7 +101,22 @@
 
                 <% projetos.forEach(function(projeto) { %>
                     <% if (projeto.id !==4) { %>
-                        <div style="margin-bottom: 40px;">
+                        <div style="margin-bottom: 40px; position: relative; padding-top: 10px;">
+                            <div style="position: absolute; top: 10px; right: 10px; display: flex; gap: 10px;">
+                                <button onclick="carregarFormEditar(this)" data-id="<%= projeto.id %>"
+                                    data-titulo="<%= projeto.titulo %>" data-descricao="<%= projeto.descricao %>"
+                                    data-papel="<%= projeto.papel %>" data-detalhes="<%= projeto.detalhes %>"
+                                    data-tecnologias="<%= projeto.tecnologias.join(', ') %>"
+                                    data-link="<%= projeto.link || '' %>"
+                                    style="background: #f5a3c7; color: white; padding: 8px 15px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px;">
+                                    Editar
+                                </button>
+                                <button onclick="deletarProjeto(<%= projeto.id %>)"
+                                    style="background: #b8256f; color: white; padding: 8px 15px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px;">
+                                    Deletar
+                                </button>
+                            </div>
+
                             <div class="curso-item">
                                 <% if (projeto.link) { %>
                                     <a href="<%= projeto.link %>" target="_blank">
@@ -63,7 +172,7 @@
                 </div>
 
                 <div class="video-container" style="width: 300px; margin: 0 auto;">
-                    <video controls>
+                    <video controls style="width: 100%;">
                         <source src="/assets/videos/studio64_mvEB55NE8e.mp4" type="video/mp4">
                         Seu navegador não suporta o elemento de vídeo.
                     </video>
@@ -86,5 +195,133 @@
                     se há um perfil predominante nas vítimas, considerando variáveis como escolaridade, nível
                     socioeconômico e questão racial, além de mapear políticas públicas para redução desses crimes.</h4>
             </div>
+        </div>
+    </div>
 
-            <%- include('footer') %>
+    <script>
+        function mostrarFormAdicionar() {
+            document.getElementById('formAdicionar').style.display = 'block';
+            document.getElementById('formEditar').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function esconderFormAdicionar() {
+            document.getElementById('formAdicionar').style.display = 'none';
+            document.getElementById('formNovoProjeto').reset();
+        }
+
+        function carregarFormEditar(btn) {
+            document.getElementById('formEditar').style.display = 'block';
+            document.getElementById('formAdicionar').style.display = 'none';
+
+            document.getElementById('editId').value = btn.dataset.id;
+            document.getElementById('editTitulo').value = btn.dataset.titulo;
+            document.getElementById('editDescricao').value = btn.dataset.descricao;
+            document.getElementById('editPapel').value = btn.dataset.papel;
+            document.getElementById('editDetalhes').value = btn.dataset.detalhes;
+            document.getElementById('editTecnologias').value = btn.dataset.tecnologias;
+            document.getElementById('editLink').value = btn.dataset.link;
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function esconderFormEditar() {
+            document.getElementById('formEditar').style.display = 'none';
+        }
+
+        async function adicionarProjeto(event) {
+            event.preventDefault();
+
+            const tecnologiasString = document.getElementById('novoTecnologias').value;
+            const tecnologiasArray = tecnologiasString.split(',').map(function (t) {
+                return t.trim();
+            });
+
+            const novoProjeto = {
+                titulo: document.getElementById('novoTitulo').value,
+                descricao: document.getElementById('novoDescricao').value,
+                papel: document.getElementById('novoPapel').value,
+                detalhes: document.getElementById('novoDetalhes').value,
+                tecnologias: tecnologiasArray,
+                link: document.getElementById('novoLink').value
+            };
+
+            try {
+                const response = await fetch('/api/projetos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(novoProjeto)
+                });
+
+                if (response.ok) {
+                    alert('Projeto adicionado com sucesso!');
+                    location.reload();
+                } else {
+                    alert('Erro ao adicionar projeto');
+                }
+            } catch (error) {
+                alert('Erro ao adicionar projeto: ' + error.message);
+            }
+        }
+
+        async function atualizarProjeto(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('editId').value;
+            const tecnologiasString = document.getElementById('editTecnologias').value;
+            const tecnologiasArray = tecnologiasString.split(',').map(function (t) {
+                return t.trim();
+            });
+
+            const projetoAtualizado = {
+                titulo: document.getElementById('editTitulo').value,
+                descricao: document.getElementById('editDescricao').value,
+                papel: document.getElementById('editPapel').value,
+                detalhes: document.getElementById('editDetalhes').value,
+                tecnologias: tecnologiasArray,
+                link: document.getElementById('editLink').value
+            };
+
+            try {
+                const response = await fetch('/api/projetos/' + id, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(projetoAtualizado)
+                });
+
+                if (response.ok) {
+                    alert('Projeto atualizado com sucesso!');
+                    location.reload();
+                } else {
+                    alert('Erro ao atualizar projeto');
+                }
+            } catch (error) {
+                alert('Erro ao atualizar projeto: ' + error.message);
+            }
+        }
+
+        async function deletarProjeto(id) {
+            if (confirm('Tem certeza que deseja deletar este projeto?')) {
+                try {
+                    const response = await fetch('/api/projetos/' + id, {
+                        method: 'DELETE'
+                    });
+
+                    if (response.ok) {
+                        alert('Projeto deletado com sucesso!');
+                        location.reload();
+                    } else {
+                        alert('Erro ao deletar projeto');
+                    }
+                } catch (error) {
+                    alert('Erro ao deletar projeto: ' + error.message);
+                }
+            }
+        }
+    </script>
+
+    <%- include('footer') %>
