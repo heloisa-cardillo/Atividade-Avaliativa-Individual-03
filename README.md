@@ -2,7 +2,7 @@
 
 ## Pré-requisitos
 
-- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+[Node.js](https://nodejs.org/) (versão 14 ou superior)
 
 ## Como executar o projeto
 
