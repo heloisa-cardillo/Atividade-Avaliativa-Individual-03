@@ -3,21 +3,22 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// Configurar EJS
+// EJS renderizando 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', [
+    path.join(__dirname, 'views'),
+    path.join(__dirname, 'public/core')
+]);
 
-// Servir arquivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/pdfs', express.static(path.join(__dirname, 'pdfs')));
 app.use('/image', express.static(path.join(__dirname, 'image')));
 app.use('/app', express.static(path.join(__dirname, 'app')));
 
-// Processar JSON e formulários
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ==================== DADOS ====================
+// infos
 
 const estudante = {
     nome: "Heloisa Cardillo",
@@ -85,52 +86,59 @@ const contato = {
     github: "https://github.com/heloisa-cardillo"
 };
 
-// ==================== ROTAS ====================
+app.get('/cursos', (req, res) => {
+    res.render('cursos');
+});
 
-// 1. Página Inicial
+// rotas
+
+
 app.get('/', (req, res) => {
     res.render('index', { nome: estudante.nome });
 });
 
-// 2. Sobre Mim
+
 app.get('/sobre', (req, res) => {
     res.render('sobre', { estudante });
 });
 
-// 3. Disciplinas
+
 app.get('/disciplinas', (req, res) => {
     res.render('disciplinas', { disciplinas });
 });
 
-// 4. Projetos
+
 app.get('/projetos', (req, res) => {
     res.render('projetos', { projetos });
 });
 
-// 5. Contato
+app.get('/cursos', (req, res) => {
+    res.render('cursos', { cursos });
+});
+
 app.get('/contato', (req, res) => {
     res.render('contato', { contato });
 });
 
-// 6. Dashboard
+
 app.get('/dashboard', (req, res) => {
     const todasTecnologias = projetos.flatMap(p => p.tecnologias);
     const contagemTecnologias = {};
-    
+
     todasTecnologias.forEach(tech => {
         contagemTecnologias[tech] = (contagemTecnologias[tech] || 0) + 1;
     });
-    
+
     const tecnologiasOrdenadas = Object.entries(contagemTecnologias)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 5);
-    
+
     const estatisticas = {
         totalDisciplinas: disciplinas.length,
         projetosConcluidos: projetos.length,
         tecnologiasMaisUsadas: tecnologiasOrdenadas
     };
-    
+
     res.render('dashboard', { estatisticas });
 });
 
@@ -159,7 +167,7 @@ app.post('/api/projetos', (req, res) => {
 app.put('/api/projetos/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = projetos.findIndex(p => p.id === id);
-    
+
     if (index !== -1) {
         projetos[index] = {
             id: id,
@@ -179,7 +187,7 @@ app.put('/api/projetos/:id', (req, res) => {
 app.delete('/api/projetos/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = projetos.findIndex(p => p.id === id);
-    
+
     if (index !== -1) {
         const projetoRemovido = projetos.splice(index, 1);
         res.json({ mensagem: 'Projeto removido com sucesso', projeto: projetoRemovido });

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - <%= nome %>
     </title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/core/style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <header>
             <div class="header-container">
                 <div class="profile-pic">
-                    <img src="/image/Screenshot_20250330-143545.png" alt="<%= nome %>">
+                    <img src="/assets/image/Screenshot_20250330-143545.png" alt="<%= nome %>">
                 </div>
                 <h1>
                     <%= nome %>
@@ -22,9 +22,8 @@
             </div>
         </header>
 
-        <div class="standard" style="text-align: center; margin-top: 40px;">
-            <h2><strong>Bem-vindo ao meu Portfólio Acadêmico!</strong></h2>
-            <p style="font-size: 18px; margin-top: 20px;">Navegue pelas seções abaixo para conhecer mais sobre mim:</p>
+        <div class="standard" style="text-align: left; margin-top: 40px;">
+            <h2><strong>Conheça meu Portfólio!</strong></h2>
 
             <div style="margin-top: 30px;">
                 <a href="/sobre"
@@ -34,6 +33,8 @@
                     style="display: inline-block; margin: 10px; padding: 15px 30px; background: linear-gradient(to right, #c93384, #e44f9c); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Disciplinas</a>
                 <a href="/projetos"
                     style="display: inline-block; margin: 10px; padding: 15px 30px; background: linear-gradient(to right, #c93384, #e44f9c); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Projetos</a>
+                <a href="/cursos"
+                    style="display: inline-block; margin: 10px; padding: 15px 30px; background: linear-gradient(to right, #c93384, #e44f9c); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Cursos</a>
                 <a href="/contato"
                     style="display: inline-block; margin: 10px; padding: 15px 30px; background: linear-gradient(to right, #c93384, #e44f9c); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Contato</a>
                 <a href="/dashboard"
@@ -42,6 +43,5 @@
         </div>
     </div>
 </body>
-<%- include('footer') %>
 
 </html>
