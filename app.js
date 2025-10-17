@@ -18,7 +18,7 @@ app.use('/app', express.static(path.join(__dirname, 'app')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// infos
+// INFOS
 
 const estudante = {
     nome: "Heloisa Cardillo",
@@ -90,9 +90,7 @@ app.get('/cursos', (req, res) => {
     res.render('cursos');
 });
 
-// rotas
-
-
+// ROTAS
 app.get('/', (req, res) => {
     res.render('index', { nome: estudante.nome });
 });
@@ -142,14 +140,13 @@ app.get('/dashboard', (req, res) => {
     res.render('dashboard', { estatisticas });
 });
 
-// ==================== CRUD ====================
+// CRUD dos projetos
 
-// GET - Listar todos os projetos (JSON)
 app.get('/api/projetos', (req, res) => {
     res.json(projetos);
 });
 
-// POST - Adicionar novo projeto
+
 app.post('/api/projetos', (req, res) => {
     const novoProjeto = {
         id: projetos.length + 1,
@@ -163,7 +160,7 @@ app.post('/api/projetos', (req, res) => {
     res.status(201).json(novoProjeto);
 });
 
-// PUT - Atualizar projeto existente
+
 app.put('/api/projetos/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = projetos.findIndex(p => p.id === id);
@@ -183,7 +180,7 @@ app.put('/api/projetos/:id', (req, res) => {
     }
 });
 
-// DELETE - Remover projeto
+
 app.delete('/api/projetos/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = projetos.findIndex(p => p.id === id);
@@ -195,8 +192,6 @@ app.delete('/api/projetos/:id', (req, res) => {
         res.status(404).json({ mensagem: 'Projeto não encontrado' });
     }
 });
-
-// ==================== INICIAR SERVIDOR ====================
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
